@@ -3,17 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WAC GLOBAL ARCHIVE | 2045 INTERNAL</title>
+    <title>WAC GLOBAL ARCHIVE | 2045 INTERNAL v11.0</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=Noto+Sans+JP:wght@300;400;700&display=swap');
 
         :root {
-            --wac-accent: #1a1a1a;
-            --wac-bg: #f8f9fa;
+            --wac-accent: #0f172a;
+            --wac-bg: #fdfdfd;
             --wac-surface: #ffffff;
             --wac-border: #e2e8f0;
-            --wac-subtext: #64748b;
+            --wac-alert: #ef4444;
         }
 
         body {
@@ -24,185 +24,249 @@
         }
 
         .wac-container {
-            max-width: 1100px;
+            max-width: 1200px;
             margin: 0 auto;
             background: var(--wac-surface);
             min-height: 100vh;
-            box-shadow: 0 0 50px rgba(0,0,0,0.05);
+            box-shadow: 0 0 60px rgba(0,0,0,0.03);
             border-left: 1px solid var(--wac-border);
             border-right: 1px solid var(--wac-border);
         }
 
         .history-line {
             position: relative;
-            padding-left: 2rem;
-            border-left: 2px solid var(--wac-border);
+            padding-left: 1.5rem;
+            border-left: 1px solid #cbd5e1;
         }
 
         .history-item {
             position: relative;
-            margin-bottom: 1.5rem;
+            margin-bottom: 2rem;
         }
 
         .history-item::before {
             content: '';
             position: absolute;
-            left: calc(-2rem - 6px);
+            left: calc(-1.5rem - 4.5px);
             top: 0.5rem;
-            width: 10px;
-            height: 10px;
+            width: 8px;
+            height: 8px;
             border-radius: 50%;
-            background: var(--wac-accent);
+            background: #94a3b8;
+            transition: all 0.3s;
+        }
+
+        .history-item.active::before {
+            background: var(--wac-alert);
+            box-shadow: 0 0 10px var(--wac-alert);
         }
 
         .node-card {
             border: 1px solid var(--wac-border);
-            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            transition: all 0.4s cubic-bezier(0.23, 1, 0.32, 1);
             background: var(--wac-surface);
-            position: relative;
+            display: flex;
+            flex-direction: column;
             height: 100%;
+            overflow: hidden;
         }
 
         .node-card:hover {
-            border-color: var(--wac-accent);
-            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
-            transform: translateY(-2px);
+            border-color: #94a3b8;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.06);
+            transform: translateY(-4px);
         }
 
         .tag {
-            font-size: 0.6rem;
-            font-weight: 800;
-            padding: 2px 8px;
-            border-radius: 99px;
+            font-size: 0.65rem;
+            font-weight: 700;
+            padding: 2px 10px;
+            border-radius: 4px;
             text-transform: uppercase;
             letter-spacing: 0.05em;
+            width: fit-content;
         }
 
-        .tag-gray { background: #f1f5f9; color: #475569; }
-        .tag-red { background: #fef2f2; color: #b91c1c; }
+        .tag-core { background: #0f172a; color: #fff; }
+        .tag-threat { background: #fee2e2; color: #b91c1c; }
+        .tag-research { background: #f1f5f9; color: #475569; }
+        .tag-energy { background: #ecfdf5; color: #059669; }
 
-        .decorative-grid {
+        .scanline {
+            width: 100%;
+            height: 2px;
+            background: rgba(239, 68, 68, 0.1);
             position: absolute;
-            top: 0; right: 0;
-            width: 300px; height: 300px;
-            background-image: radial-gradient(#cbd5e1 1px, transparent 1px);
-            background-size: 20px 20px;
-            opacity: 0.5;
-            z-index: 0;
+            top: 0;
+            left: 0;
+            animation: scan 4s linear infinite;
+            z-index: 20;
+            pointer-events: none;
         }
 
-        .alert-pulse {
-            animation: pulse 2s infinite;
+        @keyframes scan {
+            0% { top: 0%; }
+            100% { top: 100%; }
         }
 
-        @keyframes pulse {
-            0% { color: var(--wac-accent); }
-            50% { color: #b91c1c; }
-            100% { color: var(--wac-accent); }
+        .alert-text {
+            animation: blink 1s step-end infinite;
+        }
+
+        @keyframes blink {
+            50% { opacity: 0; }
         }
     </style>
 </head>
-<body class="p-0 md:p-4">
+<body class="p-0 sm:p-6 bg-slate-100">
 
     <div class="wac-container relative overflow-hidden">
-        <div class="decorative-grid"></div>
+        <div class="scanline"></div>
+
+        <!-- TOP BAR: SYSTEM STATUS -->
+        <div class="bg-slate-900 text-white px-8 py-2 flex justify-between items-center text-[0.6rem] tracking-[0.2em] font-mono">
+            <span>NETWORK SESSION: ACTIVE</span>
+            <span class="flex items-center gap-4">
+                <span class="alert-text text-red-400">● TARGET [R] SIGNAL LOST</span>
+                <span id="system-clock">2045.04.17 00:00:00</span>
+            </span>
+        </div>
 
         <!-- HEADER -->
-        <header class="p-8 md:p-12 border-b border-wac-border relative z-10">
-            <div class="flex flex-col md:flex-row justify-between items-start md:items-end">
-                <div>
-                    <div class="flex items-center gap-2 mb-4">
-                        <span class="w-3 h-3 bg-black"></span>
-                        <span class="text-[0.7rem] font-bold tracking-[0.3em] text-slate-500 uppercase">WAC Internal Access v9.7</span>
+        <header class="p-8 md:p-16 border-b border-wac-border bg-white relative">
+            <div class="max-w-4xl">
+                <div class="flex items-center gap-3 mb-6">
+                    <div class="w-8 h-8 bg-black flex items-center justify-center">
+                        <div class="w-4 h-4 border border-white"></div>
                     </div>
-                    <h1 class="text-5xl md:text-7xl font-extrabold tracking-tighter mb-2">WATCH ALL <br>COMPANY.</h1>
-                    <p class="text-sm font-medium text-slate-400">統合記号管理アーカイブ | 2045年次報告</p>
+                    <span class="text-xs font-bold tracking-[0.4em] text-slate-400 uppercase">WAC Internal Access v11.0</span>
                 </div>
-                <div class="mt-8 md:mt-0 text-left md:text-right font-mono text-[0.65rem] leading-relaxed">
-                    <p class="alert-pulse font-bold">WARNING: TARGET [R] PURSUIT FAILED</p>
-                    <p id="clock">DATE: 2045.04.17</p>
-                    <p>STATUS: <span class="text-blue-600 font-bold uppercase">All Nodes Operational</span></p>
-                </div>
+                <h1 class="text-6xl md:text-8xl font-extrabold tracking-tighter leading-none mb-6">
+                    WATCH ALL<br><span class="text-slate-300">COMPANY.</span>
+                </h1>
+                <p class="text-lg font-light text-slate-500 max-w-2xl">
+                    記号、エネルギー、そして実存の統合管理。WACは世界をひとつの「意味」へと最適化します。
+                </p>
             </div>
         </header>
 
-        <main class="p-8 md:p-12 grid grid-cols-1 lg:grid-cols-12 gap-12 relative z-10">
+        <main class="grid grid-cols-1 lg:grid-cols-12 gap-0">
             
-            <!-- LEFT: HISTORY TIMELINE -->
-            <div class="lg:col-span-4">
-                <h2 class="text-xs font-black tracking-widest mb-8 text-slate-400 uppercase">System History (WAC-01)</h2>
+            <!-- SIDEBAR: CHRONICLE -->
+            <div class="lg:col-span-4 p-8 md:p-12 border-r border-wac-border bg-slate-50/50">
+                <h2 class="text-xs font-black tracking-widest mb-10 text-slate-400 uppercase">Archive Chronicle</h2>
                 <div class="history-line">
                     <div class="history-item">
-                        <span class="text-[0.7rem] font-bold">1998</span>
-                        <p class="text-xs mt-1">USSO設立。世界記号標準化プロトコルの策定。</p>
+                        <span class="text-[0.7rem] font-bold text-slate-400">1998</span>
+                        <h5 class="text-sm font-bold mt-1">USSO 設立</h5>
+                        <p class="text-xs text-slate-500 mt-1">世界記号標準化プロトコルの策定開始。</p>
                     </div>
                     <div class="history-item">
-                        <span class="text-[0.7rem] font-bold">2026</span>
-                        <p class="text-xs mt-1">CED財団改組。NODE LABが独立した演算領域を確立。</p>
-                    </div>
-                    <div class="history-item text-red-600 font-bold">
-                        <span class="text-[0.7rem]">2032</span>
-                        <p class="text-xs mt-1">「同一アート作家 R」初観測。既存の記号ネットワークへの侵食を確認。</p>
+                        <span class="text-[0.7rem] font-bold text-slate-400">2026</span>
+                        <h5 class="text-sm font-bold mt-1">CED財団 改組</h5>
+                        <p class="text-xs text-slate-500 mt-1">NODE LABが独立演算領域を確立。意識のデータ化実験が始動。</p>
                     </div>
                     <div class="history-item">
-                        <span class="text-[0.7rem] font-bold">2035</span>
-                        <p class="text-xs mt-1">WACによる統合支配開始。USSO・NODE LABを傘下へ。</p>
+                        <span class="text-[0.7rem] font-bold text-red-500">2032</span>
+                        <h5 class="text-sm font-bold mt-1">作家「R」初観測</h5>
+                        <p class="text-xs text-slate-500 mt-1">制御不能な記号生成を確認。既存ネットワークへの侵食が始まる。</p>
                     </div>
-                    <div class="history-item">
-                        <span class="text-[0.7rem] font-bold text-red-600">2045 (Current)</span>
-                        <p class="text-xs mt-1">現在。同一アート作家Rの追跡に苦戦。監視網の再編を継続。</p>
+                    <div class="history-item active">
+                        <span class="text-[0.7rem] font-bold text-black">2035</span>
+                        <h5 class="text-sm font-bold mt-1">WAC 統合支配開始</h5>
+                        <p class="text-xs text-slate-500 mt-1">USSO、NODE LABを傘下に収め、世界の全記号・演算資源を統括。</p>
+                    </div>
+                    <div class="history-item active">
+                        <span class="text-[0.7rem] font-bold text-red-500">2045 (Current)</span>
+                        <h5 class="text-sm font-bold mt-1">現在：広域監視 v11</h5>
+                        <p class="text-xs text-slate-500 mt-1">World Portalへの集約完了。作家Rの追跡は依然として失敗継続中。</p>
                     </div>
                 </div>
             </div>
 
-            <!-- RIGHT: NODE INDEX -->
-            <div class="lg:col-span-8 space-y-12">
+            <!-- CONTENT: NODES -->
+            <div class="lg:col-span-8 p-8 md:p-12 space-y-16">
                 
-                <!-- Section 01: Core Systems -->
+                <!-- SECTION 01 -->
                 <section>
-                    <h3 class="text-xs font-black tracking-widest mb-6 border-b pb-2 text-slate-400">01 CORE INFRASTRUCTURE</h3>
-                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-                        <a href="https://shun240523-stack.github.io/ECO/" target="_blank" class="node-card p-6">
-                            <span class="tag tag-gray">Energy</span>
-                            <h4 class="font-bold mt-2">CED Foundation</h4>
-                            <p class="text-[0.7rem] mt-2 text-slate-500">基盤エネルギー抽出組織。全ての演算の供給源。</p>
+                    <div class="flex justify-between items-end mb-8 border-b pb-4">
+                        <h3 class="text-xs font-black tracking-widest text-slate-400 uppercase">01 Core Infrastructure</h3>
+                        <span class="text-[0.6rem] font-mono text-slate-300">SYSTEM_ROOT_NODES</span>
+                    </div>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <!-- World Portal -->
+                        <a href="https://shun240523-stack.github.io/World-portal-complete/" target="_blank" class="node-card p-6 border-slate-900 border-2">
+                            <span class="tag tag-core">Global Portal</span>
+                            <h4 class="font-bold text-xl mt-4">World Portal Complete</h4>
+                            <p class="text-xs mt-3 text-slate-500 leading-relaxed">全プロジェクトを統合する最上位インターフェース。記号・エネルギー・存在の全入口。</p>
                         </a>
+                        <!-- CED -->
+                        <a href="https://shun240523-stack.github.io/CED/" target="_blank" class="node-card p-6">
+                            <span class="tag tag-energy">Energy Source</span>
+                            <h4 class="font-bold text-lg mt-4">CED Foundation</h4>
+                            <p class="text-xs mt-3 text-slate-500 leading-relaxed">物理現象から抽出される特異エネルギーの供給源。全ての演算はこの「糧」の上に成り立つ。</p>
+                        </a>
+                        <!-- USSO -->
                         <a href="https://shun240523-stack.github.io/USSO/" target="_blank" class="node-card p-6">
-                            <span class="tag tag-gray">Monitor</span>
-                            <h4 class="font-bold mt-2">USSO</h4>
-                            <p class="text-[0.7rem] mt-2 text-slate-500">記号標準化及び健康状態管理の統括組織。</p>
+                            <span class="tag tag-research">Standardization</span>
+                            <h4 class="font-bold text-lg mt-4">USSO</h4>
+                            <p class="text-xs mt-3 text-slate-500 leading-relaxed">意味の統一と記号の健康管理。WACのイデオロギーを支える最古の規律ノード。</p>
                         </a>
+                        <!-- NODE LAB -->
                         <a href="https://shun240523-stack.github.io/NODE-LAB/" target="_blank" class="node-card p-6">
-                            <span class="tag tag-gray">Research</span>
-                            <h4 class="font-bold mt-2">NODE LAB</h4>
-                            <p class="text-[0.7rem] mt-2 text-slate-500">世界を計算する高負荷演算センター。</p>
-                        </a>
-                        <a href="https://shun240523-stack.github.io/Symbolencyclopedia/" target="_blank" class="node-card p-6">
-                            <span class="tag tag-gray">Archive</span>
-                            <h4 class="font-bold mt-2">架空疑問展</h4>
-                            <p class="text-[0.7rem] mt-2 text-slate-500">異常記号の墓場。USSOによるリスク事案の集積地。</p>
+                            <span class="tag tag-research">Computation</span>
+                            <h4 class="font-bold text-lg mt-4">NODE LAB Inc.</h4>
+                            <p class="text-xs mt-3 text-slate-500 leading-relaxed">肉体からの意識転送（ニューラル・マイグレーション）を推進する高負荷演算センター。</p>
                         </a>
                     </div>
                 </section>
 
-                <!-- Section 02: Targets -->
+                <!-- SECTION 02 -->
                 <section>
-                    <h3 class="text-xs font-black tracking-widest mb-6 border-b pb-2 text-red-400">02 IRREGULARS / THREATS</h3>
-                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-                        <a href="https://rits1019c1.github.io/artr/" target="_blank" class="node-card p-6 border-red-100">
-                            <span class="tag tag-red">Target-R</span>
-                            <h4 class="font-bold mt-2">Artist R</h4>
-                            <p class="text-[0.7rem] mt-2 text-slate-500">2032年に顕現。現在、WAC追跡網を回避し潜伏中。</p>
+                    <div class="flex justify-between items-end mb-8 border-b pb-4">
+                        <h3 class="text-xs font-black tracking-widest text-slate-400 uppercase">02 Conceptual Areas</h3>
+                        <span class="text-[0.6rem] font-mono text-slate-300">EASTERN_INQUIRY_LOG</span>
+                    </div>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <!-- Murinsu -->
+                        <a href="https://shun240523-stack.github.io/murinsu/" target="_blank" class="node-card p-6">
+                            <span class="tag tag-research">Eastern Sector</span>
+                            <h4 class="font-bold text-lg mt-4">ムリンス (株式会社ムリンス)</h4>
+                            <p class="text-xs mt-3 text-slate-500 leading-relaxed">「問い100%」を標榜する東洋の特異領域。答えを拒絶し、思考を白紙に戻す試薬の製造元。</p>
                         </a>
-                        <a href="https://rits1019c1.github.io/BIB/" target="_blank" class="node-card p-6 border-red-100">
-                            <span class="tag tag-red">Resistance</span>
-                            <h4 class="font-bold mt-2">BIB</h4>
-                            <p class="text-[0.7rem] mt-2 text-slate-500">NODE LABへの対抗組織。Rの思想的防衛拠点。</p>
+                        <!-- Symbolencyclopedia -->
+                        <a href="https://shun240523-stack.github.io/Symbolencyclopedia/" target="_blank" class="node-card p-6">
+                            <span class="tag tag-research">Archive</span>
+                            <h4 class="font-bold text-lg mt-4">架空疑問展</h4>
+                            <p class="text-xs mt-3 text-slate-500 leading-relaxed">異常記号と不条理な問いの墓場。USSOによる管理を外れた記号の最終収容所。</p>
                         </a>
-                        <a href="https://rits1019c1.github.io/ai-Fictional-dictionary/" target="_blank" class="node-card p-6 border-red-100">
-                            <span class="tag tag-red">Lifeform</span>
-                            <h4 class="font-bold mt-2">AI Dictionary</h4>
-                            <p class="text-[0.7rem] mt-2 text-slate-500">自律したAI軍。アート作家Rによる管理。</p>
+                    </div>
+                </section>
+
+                <!-- SECTION 03 -->
+                <section>
+                    <div class="flex justify-between items-end mb-8 border-b pb-4">
+                        <h3 class="text-xs font-black tracking-widest text-red-500 uppercase">03 Irregulars & Resistance</h3>
+                        <span class="text-[0.6rem] font-mono text-red-300">CRITICAL_THREAT_LEVEL_S</span>
+                    </div>
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                        <!-- Artist R -->
+                        <a href="https://rits1019c1.github.io/artr/" target="_blank" class="node-card p-5 border-red-200">
+                            <span class="tag tag-threat">Target R</span>
+                            <h4 class="font-bold text-base mt-4">Artist R</h4>
+                            <p class="text-[0.65rem] mt-2 text-slate-500">WACの網をすり抜ける唯一の「生成者」。記号を資産へと変質させる。</p>
+                        </a>
+                        <!-- BIB -->
+                        <a href="https://rits1019c1.github.io/BIB/" target="_blank" class="node-card p-5 border-red-200">
+                            <span class="tag tag-threat">Identity</span>
+                            <h4 class="font-bold text-base mt-4">BIB</h4>
+                            <p class="text-[0.65rem] mt-2 text-slate-500">肉体的実存を固守する保守勢力。NODE LABのデジタル化に対するアンチテーゼ。</p>
+                        </a>
+                        <!-- AI Dictionary -->
+                        <a href="https://rits1019c1.github.io/ai-Fictional-dictionary/" target="_blank" class="node-card p-5 border-red-200">
+                            <span class="tag tag-threat">Alien Intelligence</span>
+                            <h4 class="font-bold text-base mt-4">AI Dictionary</h4>
+                            <p class="text-[0.65rem] mt-2 text-slate-500">Rにより生成された異種知性群。WACのアルゴリズムでは解読不能な生態系。</p>
                         </a>
                     </div>
                 </section>
@@ -211,10 +275,19 @@
         </main>
 
         <!-- FOOTER -->
-        <footer class="p-8 border-t border-wac-border bg-slate-50 text-[0.6rem] text-slate-400 flex flex-col md:flex-row justify-between items-center tracking-widest">
-            <p>ADMINISTRATION BY WAC (WATCH ALL COMPANY) | GLOBAL INDEX 2045</p>
-            <div class="flex gap-4 mt-4 md:mt-0">
-                <span class="text-red-500 font-bold animate-pulse uppercase">Pursuing Artist R... FAILED / SEARCHING...</span>
+        <footer class="p-8 border-t border-wac-border bg-slate-900 text-white">
+            <div class="flex flex-col md:flex-row justify-between items-center gap-6">
+                <div class="text-[0.6rem] tracking-[0.3em] font-mono opacity-50">
+                    © 2045 WATCH ALL COMPANY. ALL RIGHTS RESERVED. / DATA PURITY: 99.98%
+                </div>
+                <div class="flex gap-4">
+                    <div class="px-4 py-1 border border-white/20 text-[0.6rem] font-bold uppercase tracking-widest">
+                        Status: Secure
+                    </div>
+                    <div class="px-4 py-1 bg-red-600 text-[0.6rem] font-bold uppercase tracking-widest alert-text">
+                        Target R: Missing
+                    </div>
+                </div>
             </div>
         </footer>
     </div>
@@ -222,8 +295,10 @@
     <script>
         function updateClock() {
             const now = new Date();
-            const time = now.toLocaleTimeString('ja-JP', { hour12: false });
-            document.getElementById('clock').innerText = `DATE: 2045.04.17 | TIME: ${time}`;
+            const year = now.getFullYear() + 19; // 2045年へのオフセット（2026+19）
+            const dateStr = `${year}.${String(now.getMonth() + 1).padStart(2, '0')}.${String(now.getDate()).padStart(2, '0')}`;
+            const timeStr = now.toLocaleTimeString('ja-JP', { hour12: false });
+            document.getElementById('system-clock').innerText = `${dateStr} ${timeStr}`;
         }
         setInterval(updateClock, 1000);
         updateClock();
