@@ -1,15 +1,16 @@
 <!DOCTYPE html>
 <html lang="ja">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WAC GLOBAL ARCHIVE | 2045 INTERNAL v11.0</title>
-      <meta property="og:title" content="WAC GLOBAL ARCHIVE | 2045 INTERNAL v11.0" />
-  <meta property="og:description" content="記号、エネルギー、そして実存の統合管理。WACは世界をひとつの「意味」へと最適化します。" />
-  <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://archive.wac.internal/v11.0/" /> <!-- 内部ネットワークURL想定 -->
-  <meta property="og:image" content="https://archive.wac.internal/assets/world_portal_complete.png" />
-  <meta property="og:site_name" content="WATCH ALL COMPANY." />
+    <meta property="og:title" content="WAC GLOBAL ARCHIVE | 2045 INTERNAL v11.0" />
+    <meta property="og:description" content="記号、エネルギー、そして実存の統合管理。WACは世界をひとつの「意味」へと最適化します。" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://archive.wac.internal/v11.0/" /> <!-- 内部ネットワークURL想定 -->
+    <meta property="og:image" content="https://archive.wac.internal/assets/world_portal_complete.png" />
+    <meta property="og:site_name" content="WATCH ALL COMPANY." />
 
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
@@ -35,7 +36,7 @@
             margin: 0 auto;
             background: var(--wac-surface);
             min-height: 100vh;
-            box-shadow: 0 0 60px rgba(0,0,0,0.03);
+            box-shadow: 0 0 60px rgba(0, 0, 0, 0.03);
             border-left: 1px solid var(--wac-border);
             border-right: 1px solid var(--wac-border);
         }
@@ -80,7 +81,7 @@
 
         .node-card:hover {
             border-color: #94a3b8;
-            box-shadow: 0 20px 40px rgba(0,0,0,0.06);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.06);
             transform: translateY(-4px);
         }
 
@@ -94,10 +95,25 @@
             width: fit-content;
         }
 
-        .tag-core { background: #0f172a; color: #fff; }
-        .tag-threat { background: #fee2e2; color: #b91c1c; }
-        .tag-research { background: #f1f5f9; color: #475569; }
-        .tag-energy { background: #ecfdf5; color: #059669; }
+        .tag-core {
+            background: #0f172a;
+            color: #fff;
+        }
+
+        .tag-threat {
+            background: #fee2e2;
+            color: #b91c1c;
+        }
+
+        .tag-research {
+            background: #f1f5f9;
+            color: #475569;
+        }
+
+        .tag-energy {
+            background: #ecfdf5;
+            color: #059669;
+        }
 
         .scanline {
             width: 100%;
@@ -112,8 +128,13 @@
         }
 
         @keyframes scan {
-            0% { top: 0%; }
-            100% { top: 100%; }
+            0% {
+                top: 0%;
+            }
+
+            100% {
+                top: 100%;
+            }
         }
 
         .alert-text {
@@ -121,17 +142,21 @@
         }
 
         @keyframes blink {
-            50% { opacity: 0; }
+            50% {
+                opacity: 0;
+            }
         }
     </style>
 </head>
+
 <body class="p-0 sm:p-6 bg-slate-100">
 
     <div class="wac-container relative overflow-hidden">
         <div class="scanline"></div>
 
         <!-- TOP BAR: SYSTEM STATUS -->
-        <div class="bg-slate-900 text-white px-8 py-2 flex justify-between items-center text-[0.6rem] tracking-[0.2em] font-mono">
+        <div
+            class="bg-slate-900 text-white px-8 py-2 flex justify-between items-center text-[0.6rem] tracking-[0.2em] font-mono">
             <span>NETWORK SESSION: ACTIVE</span>
             <span class="flex items-center gap-4">
                 <span class="alert-text text-red-400">● TARGET [R] SIGNAL LOST</span>
@@ -146,7 +171,8 @@
                     <div class="w-8 h-8 bg-black flex items-center justify-center">
                         <div class="w-4 h-4 border border-white"></div>
                     </div>
-                    <span class="text-xs font-bold tracking-[0.4em] text-slate-400 uppercase">WAC Internal Access v11.0</span>
+                    <span class="text-xs font-bold tracking-[0.4em] text-slate-400 uppercase">WAC Internal Access
+                        v11.0</span>
                 </div>
                 <h1 class="text-6xl md:text-8xl font-extrabold tracking-tighter leading-none mb-6">
                     WATCH ALL<br><span class="text-slate-300">COMPANY.</span>
@@ -158,7 +184,7 @@
         </header>
 
         <main class="grid grid-cols-1 lg:grid-cols-12 gap-0">
-            
+
             <!-- SIDEBAR: CHRONICLE -->
             <div class="lg:col-span-4 p-8 md:p-12 border-r border-wac-border bg-slate-50/50">
                 <h2 class="text-xs font-black tracking-widest mb-10 text-slate-400 uppercase">Archive Chronicle</h2>
@@ -186,7 +212,8 @@
                     <div class="history-item">
                         <span class="text-[0.7rem] font-bold text-slate-400">東暦2024</span>
                         <h5 class="text-sm font-bold mt-1">T.S. ポートフォリオ公開</h5>
-                        <p class="text-xs text-slate-500 mt-1">和温陣国出身の謎の人物が、意味のない美学と機能しない合理性を統合したジョークサイトを公開。Artist Rは「バイナリを喋れる謎の人物」と言及し、バイナリパターンの解析・暗記を通じて独創性を鍛えた。</p>
+                        <p class="text-xs text-slate-500 mt-1">和温陣国出身の謎の人物が、意味のない美学と機能しない合理性を統合したジョークサイトを公開。Artist
+                            Rは「バイナリを喋れる謎の人物」と言及し、バイナリパターンの解析・暗記を通じて独創性を鍛えた。</p>
                     </div>
                     <div class="history-item">
                         <span class="text-[0.7rem] font-bold text-slate-400">東暦2026</span>
@@ -208,37 +235,43 @@
 
             <!-- CONTENT: NODES -->
             <div class="lg:col-span-8 p-8 md:p-12 space-y-16">
-                
+
                 <!-- SECTION 01 -->
                 <section>
                     <div class="flex justify-between items-end mb-8 border-b pb-4">
-                        <h3 class="text-xs font-black tracking-widest text-slate-400 uppercase">01 Core Infrastructure</h3>
+                        <h3 class="text-xs font-black tracking-widest text-slate-400 uppercase">01 Core Infrastructure
+                        </h3>
                         <span class="text-[0.6rem] font-mono text-slate-300">SYSTEM_ROOT_NODES</span>
                     </div>
                     <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
                         <!-- World Portal -->
-                        <a href="https://ec2045.github.io/World-portal-complete/" target="_blank" class="node-card p-6 border-slate-900 border-2">
+                        <a href="https://ec2045.github.io/World-portal-complete/" target="_blank"
+                            class="node-card p-6 border-slate-900 border-2">
                             <span class="tag tag-core">Global Portal</span>
                             <h4 class="font-bold text-xl mt-4">World Portal Complete</h4>
-                            <p class="text-xs mt-3 text-slate-500 leading-relaxed">全プロジェクトを統合する最上位インターフェース。記号・エネルギー・存在の全入口。</p>
+                            <p class="text-xs mt-3 text-slate-500 leading-relaxed">
+                                全プロジェクトを統合する最上位インターフェース。記号・エネルギー・存在の全入口。</p>
                         </a>
                         <!-- CED -->
                         <a href="https://ec2045.github.io/CED/" target="_blank" class="node-card p-6">
                             <span class="tag tag-energy">Energy Source</span>
                             <h4 class="font-bold text-lg mt-4">CED Foundation</h4>
-                            <p class="text-xs mt-3 text-slate-500 leading-relaxed">物理現象から抽出される特異エネルギーの供給源。全ての演算はこの「糧」の上に成り立つ。</p>
+                            <p class="text-xs mt-3 text-slate-500 leading-relaxed">
+                                物理現象から抽出される特異エネルギーの供給源。全ての演算はこの「糧」の上に成り立つ。</p>
                         </a>
                         <!-- USSO -->
                         <a href="https://ec2045.github.io/USSO/" target="_blank" class="node-card p-6">
                             <span class="tag tag-research">Standardization</span>
                             <h4 class="font-bold text-lg mt-4">USSO</h4>
-                            <p class="text-xs mt-3 text-slate-500 leading-relaxed">意味の統一と記号の健康管理。WACのイデオロギーを支える最古の規律ノード。</p>
+                            <p class="text-xs mt-3 text-slate-500 leading-relaxed">意味の統一と記号の健康管理。WACのイデオロギーを支える最古の規律ノード。
+                            </p>
                         </a>
                         <!-- NODE LAB -->
                         <a href="https://ec2045.github.io/NODE-LAB/" target="_blank" class="node-card p-6">
                             <span class="tag tag-research">Computation</span>
                             <h4 class="font-bold text-lg mt-4">NODE LAB Inc.</h4>
-                            <p class="text-xs mt-3 text-slate-500 leading-relaxed">肉体からの意識転送（ニューラル・マイグレーション）を推進する高負荷演算センター。</p>
+                            <p class="text-xs mt-3 text-slate-500 leading-relaxed">
+                                肉体からの意識転送（ニューラル・マイグレーション）を推進する高負荷演算センター。</p>
                         </a>
                     </div>
                 </section>
@@ -254,13 +287,15 @@
                         <a href="https://ec2045.github.io/murinsu/" target="_blank" class="node-card p-6">
                             <span class="tag tag-research">Eastern Sector</span>
                             <h4 class="font-bold text-lg mt-4">ムリンス (株式会社ムリンス)</h4>
-                            <p class="text-xs mt-3 text-slate-500 leading-relaxed">「問い100%」を標榜する東洋の特異領域。答えを拒絶し、思考を白紙に戻す試薬の製造元。</p>
+                            <p class="text-xs mt-3 text-slate-500 leading-relaxed">
+                                「問い100%」を標榜する東洋の特異領域。答えを拒絶し、思考を白紙に戻す試薬の製造元。</p>
                         </a>
                         <!-- Symbolencyclopedia -->
                         <a href="https://ec2045.github.io/Symbolencyclopedia/" target="_blank" class="node-card p-6">
                             <span class="tag tag-research">Archive</span>
                             <h4 class="font-bold text-lg mt-4">架空疑問展</h4>
-                            <p class="text-xs mt-3 text-slate-500 leading-relaxed">異常記号と不条理な問いの墓場。USSOによる管理を外れた記号の最終収容所。</p>
+                            <p class="text-xs mt-3 text-slate-500 leading-relaxed">異常記号と不条理な問いの墓場。USSOによる管理を外れた記号の最終収容所。
+                            </p>
                         </a>
                     </div>
                 </section>
@@ -273,28 +308,36 @@
                     </div>
                     <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
                         <!-- T.S. Portfolio -->
-                        <a href="https://ec2045.github.io/murinsu/index%20-%20TS.html" target="_blank" class="node-card p-6">
+                        <a href="https://ec2045.github.io/murinsu/index%20-%20TS.html" target="_blank"
+                            class="node-card p-6">
                             <span class="tag tag-core">Professional Innovation</span>
                             <h4 class="font-bold text-lg mt-4">T.S Official Portfolio</h4>
-                            <p class="text-xs mt-3 text-slate-500 leading-relaxed">WACの監視対象であるArtist Rの師匠のような存在。WACアーカイブリストには直接記載されない謎の人物で、意味のない美学と機能しない合理性を掲げる都内拠点のジョークサイト。MURINSU FrameworkやDream Debugger v2.0などの架空成果物を公開。</p>
+                            <p class="text-xs mt-3 text-slate-500 leading-relaxed">WACの監視対象であるArtist
+                                Rの師匠のような存在。WACアーカイブリストには直接記載されない謎の人物で、意味のない美学と機能しない合理性を掲げる都内拠点のジョークサイト。MURINSU
+                                FrameworkやDream Debugger v2.0などの架空成果物を公開。</p>
                         </a>
                         <!-- Waon Jinkoku -->
                         <a href="https://ec2045.github.io/Waon-Jinkoku/" target="_blank" class="node-card p-6">
                             <span class="tag tag-energy">Waon Culture</span>
                             <h4 class="font-bold text-lg mt-4">和温陣国 公式サイト</h4>
-                            <p class="text-xs mt-3 text-slate-500 leading-relaxed">ラ＝ウクカ大陸の国家。均衡と調和、秩序ある混沌を理念とし、古の知恵をデジタルに刻む。国民は役割ごとに杖を携え、和温の杖を王（仮）に託す。魔王と職人の封印、そして「！」と「？」を合体させた「‽」の杖による和解の伝説を継承する。</p>
+                            <p class="text-xs mt-3 text-slate-500 leading-relaxed">
+                                ラ＝ウクカ大陸の国家。均衡と調和、秩序ある混沌を理念とし、古の知恵をデジタルに刻む。国民は役割ごとに杖を携え、和温の杖を王（仮）に託す。魔王と職人の封印、そして「！」と「？」を合体させた「‽」の杖による和解の伝説を継承する。
+                            </p>
                         </a>
                         <!-- onva Kingdom -->
                         <a href="https://ec2045.github.io/onva-history/" target="_blank" class="node-card p-6">
                             <span class="tag tag-research">Byam Optimized</span>
                             <h4 class="font-bold text-lg mt-4">onva Kingdom Official Portal</h4>
-                            <p class="text-xs mt-3 text-slate-500 leading-relaxed">WACのWorld Portal経由で接続されるが、内部管理ノードには未登録。ユーラシア大陸深部に位置し、不合理な言語を廃して18文字のbyamで最適化を掲げる東暦1928年建国の合理主義国家。東暦1912年、ツナサラダとナラリンが「記録の壁」を越えて秘宝を発見し、Rの祖先リテンジェンスと出会いONVAが名付けられた歴史を持つ。</p>
+                            <p class="text-xs mt-3 text-slate-500 leading-relaxed">WACのWorld
+                                Portal経由で接続されるが、内部管理ノードには未登録。ユーラシア大陸深部に位置し、不合理な言語を廃して18文字のbyamで最適化を掲げる東暦1928年建国の合理主義国家。東暦1912年、ツナサラダとナラリンが「記録の壁」を越えて秘宝を発見し、Rの祖先リテンジェンスと出会いONVAが名付けられた歴史を持つ。
+                            </p>
                         </a>
                         <!-- onvision -->
                         <a href="https://ec2045.github.io/onvision/" target="_blank" class="node-card p-6">
                             <span class="tag tag-core">Broadcast Media</span>
                             <h4 class="font-bold text-lg mt-4">onvision | ONVA公式放送局</h4>
-                            <p class="text-xs mt-3 text-slate-500 leading-relaxed">ONVAの現状を世界、そして未来へ伝える公認放送局。日々の演算精度や記号の健康状態を報道し、世界の調和と最適化の状況を監視・発信し続ける。</p>
+                            <p class="text-xs mt-3 text-slate-500 leading-relaxed">
+                                ONVAの現状を世界、そして未来へ伝える公認放送局。日々の演算精度や記号の健康状態を報道し、世界の調和と最適化の状況を監視・発信し続ける。</p>
                         </a>
                     </div>
                 </section>
@@ -302,7 +345,8 @@
                 <!-- SECTION 04 -->
                 <section>
                     <div class="flex justify-between items-end mb-8 border-b pb-4">
-                        <h3 class="text-xs font-black tracking-widest text-red-500 uppercase">04 Irregulars & Resistance</h3>
+                        <h3 class="text-xs font-black tracking-widest text-red-500 uppercase">04 Irregulars & Resistance
+                        </h3>
                         <span class="text-[0.6rem] font-mono text-red-300">CRITICAL_THREAT_LEVEL_S</span>
                     </div>
                     <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
@@ -319,13 +363,15 @@
                             <p class="text-[0.65rem] mt-2 text-slate-500">肉体的実存を固守する保守勢力。NODE LABのデジタル化に対するアンチテーゼ。</p>
                         </a>
                         <!-- AI Dictionary -->
-                        <a href="https://ec2045.github.io/ai-Fictional-dictionary/" target="_blank" class="node-card p-5 border-red-200">
+                        <a href="https://ec2045.github.io/ai-Fictional-dictionary/" target="_blank"
+                            class="node-card p-5 border-red-200">
                             <span class="tag tag-threat">Alien Intelligence</span>
                             <h4 class="font-bold text-base mt-4">AI Dictionary</h4>
                             <p class="text-[0.65rem] mt-2 text-slate-500">Rにより生成された異種知性群。WACのアルゴリズムでは解読不能な生態系。</p>
                         </a>
                         <!-- Artist R Blog -->
-                        <a href="https://ec2045.github.io/artr_blog/" target="_blank" class="node-card p-5 border-red-200">
+                        <a href="https://ec2045.github.io/artr_blog/" target="_blank"
+                            class="node-card p-5 border-red-200">
                             <span class="tag tag-threat">Target R</span>
                             <h4 class="font-bold text-base mt-4">Artist R Blog</h4>
                             <p class="text-[0.65rem] mt-2 text-slate-500">同一アート作家 Rによるマニフェスト。独創性の源泉とバイナリパターンの記録。</p>
@@ -366,4 +412,5 @@
         updateClock();
     </script>
 </body>
+
 </html>
