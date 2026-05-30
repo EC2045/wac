@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=Noto+Sans+JP:wght@300;400;700&display=swap');
+
+        :root {
+            --wac-accent: #0f172a;
+            --wac-bg: #fdfdfd;
+            --wac-surface: #ffffff;
+            --wac-border: #e2e8f0;
+            --wac-alert: #ef4444;
+        }
+
+        body {
+            background-color: var(--wac-bg);
+            color: var(--wac-accent);
+            font-family: 'Inter', 'Noto Sans JP', sans-serif;
+            line-height: 1.6;
+        }
+
+        .wac-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: var(--wac-surface);
+            min-height: 100vh;
+            box-shadow: 0 0 60px rgba(0, 0, 0, 0.03);
+            border-left: 1px solid var(--wac-border);
+            border-right: 1px solid var(--wac-border);
+        }
+
+        .history-line {
+            position: relative;
+            padding-left: 1.5rem;
+            border-left: 1px solid #cbd5e1;
+        }
+
+        .history-item {
+            position: relative;
+            margin-bottom: 2rem;
+        }
+
+        .history-item::before {
+            content: '';
+            position: absolute;
+            left: calc(-1.5rem - 4.5px);
+            top: 0.5rem;
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            background: #94a3b8;
+            transition: all 0.3s;
+        }
+
+        .history-item.active::before {
+            background: var(--wac-alert);
+            box-shadow: 0 0 10px var(--wac-alert);
+        }
+
+        .node-card {
+            border: 1px solid var(--wac-border);
+            transition: all 0.4s cubic-bezier(0.23, 1, 0.32, 1);
+            background: var(--wac-surface);
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+            overflow: hidden;
+        }
+
+        .node-card:hover {
+            border-color: #94a3b8;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.06);
+            transform: translateY(-4px);
+        }
+
+        .tag {
+            font-size: 0.65rem;
+            font-weight: 700;
+            padding: 2px 10px;
+            border-radius: 4px;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            width: fit-content;
+        }
+
+        .tag-core {
+            background: #0f172a;
+            color: #fff;
+        }
+
+        .tag-threat {
+            background: #fee2e2;
+            color: #b91c1c;
+        }
+
+        .tag-research {
+            background: #f1f5f9;
+            color: #475569;
+        }
+
+        .tag-energy {
+            background: #ecfdf5;
+            color: #059669;
+        }
+
+        .scanline {
+            width: 100%;
+            height: 2px;
+            background: rgba(239, 68, 68, 0.1);
+            position: absolute;
+            top: 0;
+            left: 0;
+            animation: scan 4s linear infinite;
+            z-index: 20;
+            pointer-events: none;
+        }
+
+        @keyframes scan {
+            0% {
+                top: 0%;
+            }
+
+            100% {
+                top: 100%;
+            }
+        }
+
+        .alert-text {
+            animation: blink 1s step-end infinite;
+        }
+
+        @keyframes blink {
+            50% {
+                opacity: 0;
+            }
+        }
+        @font-face {
+  font-family: '2045alphabet';
+  src: url('https://ec2045.github.io/2045font/2045alphabet.otf') format('opentype');
+  font-display: swap;
+}
+
+body {
+  font-family: '2045alphabet', 'Noto Sans JP', sans-serif;
+}
