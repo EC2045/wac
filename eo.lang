@@ -1,0 +1,87 @@
+# WAC GLOBAL ARCHIVE - Esperanto
+# Formato: ŝlosilo=valoro
+# Linioj komencitaj per '#' estas komentoj
+
+# Kaplinio
+header.subtitle=WAC Interna Aliro v11.0
+header.desc=Integrita administrado de simboloj, energio kaj ekzisto. WAC optimumigas la mondon en ununuran „signifon."
+
+# Sistemstrio
+system.session=RETA SESIO: AKTIVA
+system.signal=● CELO [R] SIGNALO PERDITA
+
+# Sekcioj
+section.01=01 Kerna Infrastrukturo
+section.02=02 Konceptaj Areoj
+section.03=03 Paralelaj Portaloj
+section.04=04 Neregulaj & Rezistantoj
+
+# Kroniko
+chronicle.title=Arkiva Kroniko
+
+# Piednoto
+footer.copyright=© Orienta Kalendaro 2045 WATCH ALL COMPANY. ĈIUJ RAJTOJ REZERVITAJ. / DATUMA PURECO: 99.98%
+footer.status=Stato: Sekura
+footer.target=Celo R: Malaperis
+
+# Kroniko-Historio
+chronicle.1912.title=Transpaso de la „Muro de Rekordoj“
+chronicle.1912.desc=Tinuso-Salato kaj Naralin trapasis la muron kaj malkovris la trezoron. Ili renkontis Rittengence, prapatron de R.
+chronicle.1928.title=Fondiĝo de onva
+chronicle.1928.desc=Estiĝas raciisma ŝtato optimumigita per forigo de neracieco. Nomita „ONVA“.
+chronicle.1998.title=Fondiĝo de USSO
+chronicle.1998.desc=Komenciĝis la redaktado de la monda simbola normiga protokolo.
+chronicle.2003.title=Fondiĝo de la Religio de Formeblaj Skribil-Purigiloj
+chronicle.2003.desc=Ideologio kiu emfazas flekseblecon kaj plastecon, instruante ke la mondo devus ŝanĝi formon flekseble kiel pan-skrapiĉo (skribil-purigilo), enmetante eĉ erarojn en sin por kuniĝi.
+chronicle.2023.title=Unua Observo de la Aŭtoro „R“
+chronicle.2023.desc=Neregebla simbola generado estis konfirmita. Poste montriĝis ke „R“ ne estas unu persono, sed „ekzisto“ heredita de la unua generacio Ritaren.
+chronicle.2024.title=T.S. Portfolio Publikigita
+chronicle.2024.desc=Mistera persono el la nacio de Waon Jinkoku publikigis ŝercan retejon integrantan senhavan estetikon kaj nefunkcian raciecon. Artisto R menciis lin kiel „mistera persono kiu povas paroli duume“ kaj trejnis sian kreivon per analizo kaj parkerigo de duumaj ŝablonoj.
+chronicle.2026.title=Reorganizo de CED-Fonduso
+chronicle.2026.desc=NODE LAB establis sendependan komputan domajnon. Eksperimentoj pri ciferecigo de konscio komenciĝis.
+chronicle.2035.title=WAC Integra Regado Komenciĝas
+chronicle.2035.desc=Akiris USSO kaj NODE LAB por administri ĉiujn simbolojn kaj komputajn rimedojn de la mondo.
+chronicle.2045.title=Nuntempo: Larĝarea Monitorado v11
+chronicle.2045.desc=Kolekto al la Monda Portalo finiĝis. Trakado de Aŭtoro R ankoraŭ fiaskas.
+
+# Nod-Kartoj
+node.worldportal.desc=La plej alta interfaco integranta ĉiujn projektojn. La enirejo al ĉiuj simboloj, energio kaj ekzisto.
+node.ced.desc=La fonto de eksterordinara energio ekstraktita el fizikaj fenomenoj. Ĉiuj komputadoj baziĝas sur ĉi tiu „nutraĵo“.
+node.usso.desc=Unuiĝo de signifo kaj simbola sanadministrado. La plej malnova reguliga nodo subtenanta la ideologion de WAC.
+node.nodelab.desc=Alt-ŝarĝa komputada centro promocianta transigon de konscio el la fizika korpo (neŭrala migrado).
+node.e4cloud.desc=Interna ĉifrita arkivo postulanta administran aŭtentokontrolon. Enhavas personajn datumojn de Aria, May, Shuren kaj T.S., dinamike referencatajn per fizikaj dosierujaj skanadoj.
+
+node.murinsu.title=Murinsu Co., Ltd.
+node.murinsu.desc=Unika regiono en la Oriento rekomendante „100% Demandojn“. Fabrikisto de reakciiloj kiuj rifuzas respondojn kaj restarigas penson al blankeco.
+node.symbol.title=Fikcia Demanda Ekspozicio
+node.symbol.desc=Tombejo por nenormalaj simboloj kaj absurdaj demandoj. La fina retenzono por simboloj ekster la reguligo de USSO.
+node.kneaded.title=La Religio de Formeblaj Skribil-Purigiloj
+node.kneaded.desc=Religia grupo kredante ke „la mondo devus havi unuecon kiel formebla skribil-purigilo“. La skribaĵo instruas kiel percepti la mondon flekseble.
+
+node.ts.title=T.S Official Portfolio
+node.ts.desc=Unuo kies rilato kun Artisto R, la monitorada celo de WAC, estas malfacile kaptebla. Mistera persono ne rekte listigita en la arkiva listo de WAC, administrante lokan ŝercan retejon kun sencela estetiko kaj nefunkcia racieco. Publikigas fikciajn verkojn kiel MURINSU-Kadro kaj Dream Debugger v2.0.
+node.waon.title=Oficiala Retejo de Waon Jinkoku
+node.waon.desc=Nacio sur la kontinento La Uqcaca. Kun la filozofio de ekvilibro, harmonio kaj ordigita kaoso, ĝi ĉizas antikvan saĝecon en ciferecan formon. Civitanoj portas bastonojn laŭ siaj roloj, komisiante la bastonon de Waon al la provizora reĝo. Heredas la legendon pri sigelado de la demonreĝo kaj metiisto, kaj repaciĝo per la bastono de „‽“ (kombinante „!“ kaj „?“).
+node.waonobs.title=Ekosistema Observatorio de Waonjin
+node.waonobs.desc=Datumbazo pri estaĵoj vivantaj en la Nacio de Waon Jinkoku. Diversaj unikaj estaĵoj estas registritaj.
+node.wen.title=WEN | Oficiala Elsendo-Stacio de Waon Jinkoku
+node.wen.desc=Enlanda elsendado en Waon Jinkoku. Utilas por liveri la plej novajn novaĵojn al civitanoj kaj elsendi nacian kulturon eksterlande.
+node.onva.title=Oficiala Portalo de la Regno onva
+node.onva.desc=Konektita per la Monda Portalo de WAC, sed neregistrita en internaj administraj nodoj. Situanta profunde en la eŭrazia kontinento, raciisma nacio fondita en 1928 rekomendante optimumigon per 18-litera byam forigante neraciajn lingvojn. Havas la historion kie Tinuso-Salato kaj Naralin trapasis la „Muron de Rekordoj“ en 1912, malkovris trezoron, renkontis la prapatron de R, Rittengence, kaj nomis ONVA.
+node.onvahist.title=onva Historiaj Dokumentoj
+node.onvahist.desc=Arkivo registranta la historion de la ONVA-Regno. Organizas diversajn historiojn komencante per la mito de Tinuso-Salato.
+node.onvacreature.title=onva Biologiaj Dokumentoj
+node.onvacreature.desc=Datumbazo pri estaĵoj vivantaj en la ONVA-Regno. Registras la ekologion de diversaj unikaj estaĵoj.
+node.onvision.title=onvision | Oficiala Elsendo-Stacio de ONVA
+node.onvision.desc=Oficiala elsendo-stacio perante la nunan staton de ONVA al la mondo kaj la estonteco. Daŭrigas raporti ĉiutagan komputan precizecon kaj simbolan sanon, monitorante kaj elsendante la staton de tutmonda harmonio kaj optimumigo.
+node.onvaculture.title=ONVA Kulturo
+node.onvaculture.desc=Kultura arkivo registranta la manĝaĵojn, vestojn, loĝadon kaj vivstilon de la ONVA-Regno. Detale klarigas la ĉiutagan vivon kunfandantan raciecon kaj estetikon, inkluzive de tradicia vesto „!abyang“ kaj la baza terpoma salato.
+node.onvacitizen.title=onva Cifereca Registro de Civitaneco
+node.onvacitizen.desc=Registro de civitanoj de la ONVA-Regno. Civitana mastruma arkivo kovranta speciojn, okupon, lingvon kaj individuajn duumajn datumojn.
+
+node.artr.desc=La „ekzisto“ heredita de la unua generacio Ritaren. La sola „kreinto“ glitanta tra la reto de WAC.
+node.bib.desc=Konservativa forto defendanta fizikan ekziston. Antitezo al la cifereca migrado de NODE LAB.
+node.aidict.desc=Grupo de fremda inteligento generita de R. Neinterpretebla per la algoritmoj de WAC.
+node.artrblog.desc=Manifesto de la sama artisto R. Registro de la fonto de kreivo kaj duumaj ŝablonoj.
+node.artrts.desc=Dialoga registro inter Artisto R kaj T.S. Registras la uzadon de duuma kaj la „demando“ kaŝita en Waon Jinkoku.
+node.rittublog.desc=Blogo de Rittsu, kiu heredas la titolon de R. Registras pasintajn memorojn kaj la renkonton kun May.

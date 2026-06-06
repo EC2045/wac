@@ -11,9 +11,10 @@
     <meta property="og:url" content="https://archive.wac.internal/v11.0/" /> <!-- 内部ネットワークURL想定 -->
     <meta property="og:image" content="https://archive.wac.internal/assets/world_portal_complete.png" />
     <meta property="og:site_name" content="WATCH ALL COMPANY." />
+    <script src="https://ec2045.github.io/scripts/font.js" data-lang-path="{lang}.lang"></script>
 
     <script src="https://cdn.tailwindcss.com"></script>
-  <link rel="stylesheet" href="src/style_2013b6c2.css">
+    <link rel="stylesheet" href="src/style_2013b6c2.css">
 </head>
 
 <body class="p-0 sm:p-6 bg-slate-100">
@@ -24,9 +25,9 @@
         <!-- TOP BAR: SYSTEM STATUS -->
         <div
             class="bg-slate-900 text-white px-8 py-2 flex justify-between items-center text-[0.6rem] tracking-[0.2em] font-mono">
-            <span>NETWORK SESSION: ACTIVE</span>
+            <span>system.session</span>
             <span class="flex items-center gap-4">
-                <span class="alert-text text-red-400">● TARGET [R] SIGNAL LOST</span>
+                <span class="alert-text text-red-400">system.signal</span>
                 <span id="system-clock">2045.04.17 00:00:00</span>
             </span>
         </div>
@@ -38,14 +39,13 @@
                     <div class="w-8 h-8 bg-black flex items-center justify-center">
                         <div class="w-4 h-4 border border-white"></div>
                     </div>
-                    <span class="text-xs font-bold tracking-[0.4em] text-slate-400 uppercase">WAC Internal Access
-                        v11.0</span>
+                    <span class="text-xs font-bold tracking-[0.4em] text-slate-400 uppercase">header.subtitle</span>
                 </div>
                 <h1 class="text-6xl md:text-8xl font-extrabold tracking-tighter leading-none mb-6">
                     WATCH ALL<br><span class="text-slate-300">COMPANY.</span>
                 </h1>
                 <p class="text-lg font-light text-slate-500 max-w-2xl">
-                    記号、エネルギー、そして実存の統合管理。WACは世界をひとつの「意味」へと最適化します。
+                    header.desc
                 </p>
             </div>
         </header>
@@ -54,54 +54,52 @@
 
             <!-- SIDEBAR: CHRONICLE -->
             <div class="lg:col-span-4 p-8 md:p-12 border-r border-wac-border bg-slate-50/50">
-                <h2 class="text-xs font-black tracking-widest mb-10 text-slate-400 uppercase">Archive Chronicle</h2>
+                <h2 class="text-xs font-black tracking-widest mb-10 text-slate-400 uppercase">chronicle.title</h2>
                 <div class="history-line">
                     <div class="history-item">
                         <span class="text-[0.7rem] font-bold text-slate-400">東暦1912</span>
-                        <h5 class="text-sm font-bold mt-1">「記録の壁」突破</h5>
-                        <p class="text-xs text-slate-500 mt-1">ツナサラダとナラリンが壁を越え秘宝を発見。Rの祖先リテンジェンスと出会う。</p>
+                        <h5 class="text-sm font-bold mt-1">chronicle.1912.title</h5>
+                        <p class="text-xs text-slate-500 mt-1">chronicle.1912.desc</p>
                     </div>
                     <div class="history-item">
                         <span class="text-[0.7rem] font-bold text-slate-400">東暦1928</span>
-                        <h5 class="text-sm font-bold mt-1">onva 建国</h5>
-                        <p class="text-xs text-slate-500 mt-1">不合理を廃し、最適化された合理主義国家が成立。「ONVA」と名付けられる。</p>
+                        <h5 class="text-sm font-bold mt-1">chronicle.1928.title</h5>
+                        <p class="text-xs text-slate-500 mt-1">chronicle.1928.desc</p>
                     </div>
                     <div class="history-item">
                         <span class="text-[0.7rem] font-bold text-slate-400">東暦1998</span>
-                        <h5 class="text-sm font-bold mt-1">USSO 設立</h5>
-                        <p class="text-xs text-slate-500 mt-1">世界記号標準化プロトコルの策定開始。</p>
+                        <h5 class="text-sm font-bold mt-1">chronicle.1998.title</h5>
+                        <p class="text-xs text-slate-500 mt-1">chronicle.1998.desc</p>
                     </div>
                     <div class="history-item">
                         <span class="text-[0.7rem] font-bold text-slate-400">東暦2003</span>
-                        <h5 class="text-sm font-bold mt-1">練里消詩教 成立</h5>
-                        <p class="text-xs text-slate-500 mt-1">世界を練り消しのように「柔軟に形を変え、汚れ（過ち）さえも自らに練り込んで一つにまとまるべき」
-                            と説く、包容力と可塑性を重んじる思想の誕生</p>
+                        <h5 class="text-sm font-bold mt-1">chronicle.2003.title</h5>
+                        <p class="text-xs text-slate-500 mt-1">chronicle.2003.desc</p>
                     </div>
                     <div class="history-item">
                         <span class="text-[0.7rem] font-bold text-red-500">東暦2023</span>
-                        <h5 class="text-sm font-bold mt-1">作家「R」初観測</h5>
-                        <p class="text-xs text-slate-500 mt-1">制御不能な記号生成を確認。後に「R」は一人ではなく、初代リタレンから受け継がれた「存在（ぞんざい）」であることが判明。</p>
+                        <h5 class="text-sm font-bold mt-1">chronicle.2023.title</h5>
+                        <p class="text-xs text-slate-500 mt-1">chronicle.2023.desc</p>
                     </div>
                     <div class="history-item">
                         <span class="text-[0.7rem] font-bold text-slate-400">東暦2024</span>
-                        <h5 class="text-sm font-bold mt-1">T.S. ポートフォリオ公開</h5>
-                        <p class="text-xs text-slate-500 mt-1">和温陣国出身の謎の人物が、意味のない美学と機能しない合理性を統合したジョークサイトを公開。Artist
-                            Rは「バイナリを喋れる謎の人物」と言及し、バイナリパターンの解析・暗記を通じて独創性を鍛えた。</p>
+                        <h5 class="text-sm font-bold mt-1">chronicle.2024.title</h5>
+                        <p class="text-xs text-slate-500 mt-1">chronicle.2024.desc</p>
                     </div>
                     <div class="history-item">
                         <span class="text-[0.7rem] font-bold text-slate-400">東暦2026</span>
-                        <h5 class="text-sm font-bold mt-1">CED財団 改組</h5>
-                        <p class="text-xs text-slate-500 mt-1">NODE LABが独立演算領域を確立。意識のデータ化実験が始動。</p>
+                        <h5 class="text-sm font-bold mt-1">chronicle.2026.title</h5>
+                        <p class="text-xs text-slate-500 mt-1">chronicle.2026.desc</p>
                     </div>
                     <div class="history-item active">
                         <span class="text-[0.7rem] font-bold text-black">東暦2035</span>
-                        <h5 class="text-sm font-bold mt-1">WAC 統合支配開始</h5>
-                        <p class="text-xs text-slate-500 mt-1">USSO、NODE LABを傘下に収め、世界の全記号・演算資源を統括。</p>
+                        <h5 class="text-sm font-bold mt-1">chronicle.2035.title</h5>
+                        <p class="text-xs text-slate-500 mt-1">chronicle.2035.desc</p>
                     </div>
                     <div class="history-item active">
                         <span class="text-[0.7rem] font-bold text-red-500">東暦2045 (Current)</span>
-                        <h5 class="text-sm font-bold mt-1">現在：広域監視 v11</h5>
-                        <p class="text-xs text-slate-500 mt-1">World Portalへの集約完了。作家Rの追跡は依然として失敗継続中。</p>
+                        <h5 class="text-sm font-bold mt-1">chronicle.2045.title</h5>
+                        <p class="text-xs text-slate-500 mt-1">chronicle.2045.desc</p>
                     </div>
                 </div>
             </div>
@@ -112,8 +110,7 @@
                 <!-- SECTION 01 -->
                 <section>
                     <div class="flex justify-between items-end mb-8 border-b pb-4">
-                        <h3 class="text-xs font-black tracking-widest text-slate-400 uppercase">01 Core Infrastructure
-                        </h3>
+                        <h3 class="text-xs font-black tracking-widest text-slate-400 uppercase">section.01</h3>
                         <span class="text-[0.6rem] font-mono text-slate-300">SYSTEM_ROOT_NODES</span>
                     </div>
                     <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -122,36 +119,31 @@
                             class="node-card p-6 border-slate-900 border-2">
                             <span class="tag tag-core">Global Portal</span>
                             <h4 class="font-bold text-xl mt-4">World Portal Complete</h4>
-                            <p class="text-xs mt-3 text-slate-500 leading-relaxed">
-                                全プロジェクトを統合する最上位インターフェース。記号・エネルギー・存在の全入口。</p>
+                            <p class="text-xs mt-3 text-slate-500 leading-relaxed">node.worldportal.desc</p>
                         </a>
                         <!-- CED -->
                         <a href="https://ec2045.github.io/CED/" target="_blank" class="node-card p-6">
                             <span class="tag tag-energy">Energy Source</span>
                             <h4 class="font-bold text-lg mt-4">CED Foundation</h4>
-                            <p class="text-xs mt-3 text-slate-500 leading-relaxed">
-                                物理現象から抽出される特異エネルギーの供給源。全ての演算はこの「糧」の上に成り立つ。</p>
+                            <p class="text-xs mt-3 text-slate-500 leading-relaxed">node.ced.desc</p>
                         </a>
                         <!-- USSO -->
                         <a href="https://ec2045.github.io/USSO/" target="_blank" class="node-card p-6">
                             <span class="tag tag-research">Standardization</span>
                             <h4 class="font-bold text-lg mt-4">USSO</h4>
-                            <p class="text-xs mt-3 text-slate-500 leading-relaxed">意味の統一と記号の健康管理。WACのイデオロギーを支える最古の規律ノード。
-                            </p>
+                            <p class="text-xs mt-3 text-slate-500 leading-relaxed">node.usso.desc</p>
                         </a>
                         <!-- NODE LAB -->
                         <a href="https://ec2045.github.io/NODE-LAB/" target="_blank" class="node-card p-6">
                             <span class="tag tag-research">Computation</span>
                             <h4 class="font-bold text-lg mt-4">NODE LAB Inc.</h4>
-                            <p class="text-xs mt-3 text-slate-500 leading-relaxed">
-                                肉体からの意識転送（ニューラル・マイグレーション）を推進する高負荷演算センター。</p>
+                            <p class="text-xs mt-3 text-slate-500 leading-relaxed">node.nodelab.desc</p>
                         </a>
                         <!-- E4 CLOUD -->
                         <a href="https://ec2045.github.io/e4cloud/" target="_blank" class="node-card p-6">
                             <span class="tag tag-core">Encrypted Storage</span>
                             <h4 class="font-bold text-lg mt-4">E4 CLOUD SERVICE</h4>
-                            <p class="text-xs mt-3 text-slate-500 leading-relaxed">
-                                管理者認証を必要とする内部暗号化アーカイブ。アリア、メイ、シュレン、T.S.の個人データが格納されており、物理ディレクトリスキャンにより動的に参照可能。</p>
+                            <p class="text-xs mt-3 text-slate-500 leading-relaxed">node.e4cloud.desc</p>
                         </a>
                     </div>
                 </section>
@@ -159,32 +151,28 @@
                 <!-- SECTION 02 -->
                 <section>
                     <div class="flex justify-between items-end mb-8 border-b pb-4">
-                        <h3 class="text-xs font-black tracking-widest text-slate-400 uppercase">02 Conceptual Areas</h3>
+                        <h3 class="text-xs font-black tracking-widest text-slate-400 uppercase">section.02</h3>
                         <span class="text-[0.6rem] font-mono text-slate-300">EASTERN_INQUIRY_LOG</span>
                     </div>
                     <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
                         <!-- Murinsu -->
                         <a href="https://ec2045.github.io/murinsu/" target="_blank" class="node-card p-6">
                             <span class="tag tag-research">Eastern Sector</span>
-                            <h4 class="font-bold text-lg mt-4">ムリンス (株式会社ムリンス)</h4>
-                            <p class="text-xs mt-3 text-slate-500 leading-relaxed">
-                                「問い100%」を標榜する東洋の特異領域。答えを拒絶し、思考を白紙に戻す試薬の製造元。</p>
+                            <h4 class="font-bold text-lg mt-4">node.murinsu.title</h4>
+                            <p class="text-xs mt-3 text-slate-500 leading-relaxed">node.murinsu.desc</p>
                         </a>
                         <!-- Symbolencyclopedia -->
                         <a href="https://ec2045.github.io/Symbolencyclopedia/" target="_blank" class="node-card p-6">
                             <span class="tag tag-research">Archive</span>
-                            <h4 class="font-bold text-lg mt-4">架空疑問展</h4>
-                            <p class="text-xs mt-3 text-slate-500 leading-relaxed">異常記号と不条理な問いの墓場。USSOによる管理を外れた記号の最終収容所。
-                            </p>
+                            <h4 class="font-bold text-lg mt-4">node.symbol.title</h4>
+                            <p class="text-xs mt-3 text-slate-500 leading-relaxed">node.symbol.desc</p>
                         </a>
                         <!-- The Bible of Kneaded Erasers -->
                         <a href="https://ec2045.github.io/The-Bible-of-Kneaded-Erasers/" target="_blank"
                             class="node-card p-6">
                             <span class="tag tag-research">Religion</span>
-                            <h4 class="font-bold text-lg mt-4">練里消詩教</h4>
-                            <p class="text-xs mt-3 text-slate-500 leading-relaxed">
-                                「世界は練り消しのようなまとまりを持つべきだ」という思想をもつ宗教団体。経典である「練里消詩教」は世界を柔軟に捉えるための教えを説いている。
-                            </p>
+                            <h4 class="font-bold text-lg mt-4">node.kneaded.title</h4>
+                            <p class="text-xs mt-3 text-slate-500 leading-relaxed">node.kneaded.desc</p>
                         </a>
                     </div>
                 </section>
@@ -192,7 +180,7 @@
                 <!-- SECTION 03 -->
                 <section>
                     <div class="flex justify-between items-end mb-8 border-b pb-4">
-                        <h3 class="text-xs font-black tracking-widest text-slate-400 uppercase">03 Parallel Portals</h3>
+                        <h3 class="text-xs font-black tracking-widest text-slate-400 uppercase">section.03</h3>
                         <span class="text-[0.6rem] font-mono text-slate-300">EXTERNAL_MARTIAL_LOG</span>
                     </div>
                     <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -200,78 +188,63 @@
                         <a href="https://ec2045.github.io/murinsu/index%20-%20TS.html" target="_blank"
                             class="node-card p-6">
                             <span class="tag tag-core">Professional Innovation</span>
-                            <h4 class="font-bold text-lg mt-4">T.S Official Portfolio</h4>
-                            <p class="text-xs mt-3 text-slate-500 leading-relaxed">WACの監視対象であるArtist
-                                Rとの関係が掴みづらい存在。WACアーカイブリストには直接記載されない謎の人物で、意味のない美学と機能しない合理性を掲げる都内拠点のジョークサイト。MURINSU
-                                FrameworkやDream Debugger v2.0などの架空成果物を公開。</p>
+                            <h4 class="font-bold text-lg mt-4">node.ts.title</h4>
+                            <p class="text-xs mt-3 text-slate-500 leading-relaxed">node.ts.desc</p>
                         </a>
                         <!-- Waon Jinkoku -->
                         <a href="https://ec2045.github.io/Waon-Jinkoku/" target="_blank" class="node-card p-6">
                             <span class="tag tag-energy">Waon Culture</span>
-                            <h4 class="font-bold text-lg mt-4">和温陣国 公式サイト</h4>
-                            <p class="text-xs mt-3 text-slate-500 leading-relaxed">
-                                ラ＝ウクカ大陸の国家。均衡と調和、秩序ある混沌を理念とし、古の知恵をデジタルに刻む。国民は役割ごとに杖を携え、和温の杖を王（仮）に託す。魔王と職人の封印、そして「！」と「？」を合体させた「‽」の杖による和解の伝説を継承する。
-                            </p>
+                            <h4 class="font-bold text-lg mt-4">node.waon.title</h4>
+                            <p class="text-xs mt-3 text-slate-500 leading-relaxed">node.waon.desc</p>
                         </a>
                         <!-- Waonjin Ecosystem Observatory -->
                         <a href="https://ec2045.github.io/Waonjin-Ecosystem-Observatory/" target="_blank"
                             class="node-card p-6">
                             <span class="tag tag-research">Biological</span>
-                            <h4 class="font-bold text-lg mt-4">和温陣国生態系観測所</h4>
-                            <p class="text-xs mt-3 text-slate-500 leading-relaxed">
-                                和温陣国に住む生物について書かれているデータベース。様々な特異生物が登録されている。
-                            </p>
+                            <h4 class="font-bold text-lg mt-4">node.waonobs.title</h4>
+                            <p class="text-xs mt-3 text-slate-500 leading-relaxed">node.waonobs.desc</p>
                         </a>
                         <!-- WEN -->
                         <a href="https://ec2045.github.io/WZN/" target="_blank" class="node-card p-6">
                             <span class="tag tag-core">Broadcast Media</span>
-                            <h4 class="font-bold text-lg mt-4">WEN | 和温陣国公式放送局</h4>
-                            <p class="text-xs mt-3 text-slate-500 leading-relaxed">
-                                和温陣国の国内放送。様々な最新情報を国民に伝えるとともに、国家の文化を国外に発信する役割を持つ。
-                            </p>
+                            <h4 class="font-bold text-lg mt-4">node.wen.title</h4>
+                            <p class="text-xs mt-3 text-slate-500 leading-relaxed">node.wen.desc</p>
                         </a>
                         <!-- onva Kingdom -->
                         <a href="https://ec2045.github.io/onva/" target="_blank" class="node-card p-6">
                             <span class="tag tag-research">Byam Optimized</span>
-                            <h4 class="font-bold text-lg mt-4">onva Kingdom Official Portal</h4>
-                            <p class="text-xs mt-3 text-slate-500 leading-relaxed">WACのWorld
-                                Portal経由で接続されるが、内部管理ノードには未登録。ユーラシア大陸深部に位置し、不合理な言語を廃して18文字のbyamで最適化を掲げる東暦1928年建国の合理主義国家。東暦1912年、ツナサラダとナラリンが「記録の壁」を越えて秘宝を発見し、Rの祖先リテンジェンスと出会いONVAが名付けられた歴史を持つ。
-                            </p>
+                            <h4 class="font-bold text-lg mt-4">node.onva.title</h4>
+                            <p class="text-xs mt-3 text-slate-500 leading-relaxed">node.onva.desc</p>
                         </a>
                         <!-- onva History -->
                         <a href="https://ec2045.github.io/onva-history/" target="_blank" class="node-card p-6">
                             <span class="tag tag-research">Archive</span>
-                            <h4 class="font-bold text-lg mt-4">onva 歴史資料</h4>
-                            <p class="text-xs mt-3 text-slate-500 leading-relaxed">
-                                ONVA王国の歴史を記録したアーカイブ。ツナサラダの神話を始めとした様々な歴史が整理されている。</p>
+                            <h4 class="font-bold text-lg mt-4">node.onvahist.title</h4>
+                            <p class="text-xs mt-3 text-slate-500 leading-relaxed">node.onvahist.desc</p>
                         </a>
                         <!-- onva Creature -->
                         <a href="https://ec2045.github.io/onva-s_creature/" target="_blank" class="node-card p-6">
                             <span class="tag tag-research">Biological</span>
-                            <h4 class="font-bold text-lg mt-4">onva 生物資料</h4>
-                            <p class="text-xs mt-3 text-slate-500 leading-relaxed">
-                                ONVA王国に住む生物について書かれているデータベース。様々な特異生物の生態が登録されている。</p>
+                            <h4 class="font-bold text-lg mt-4">node.onvacreature.title</h4>
+                            <p class="text-xs mt-3 text-slate-500 leading-relaxed">node.onvacreature.desc</p>
                         </a>
                         <!-- onvision -->
                         <a href="https://ec2045.github.io/onvision/" target="_blank" class="node-card p-6">
                             <span class="tag tag-core">Broadcast Media</span>
-                            <h4 class="font-bold text-lg mt-4">onvision | ONVA公式放送局</h4>
-                            <p class="text-xs mt-3 text-slate-500 leading-relaxed">
-                                ONVAの現状を世界、そして未来へ伝える公認放送局。日々の演算精度や記号の健康状態を報道し、世界の調和 and 最適化の状況を監視・発信し続ける。</p>
+                            <h4 class="font-bold text-lg mt-4">node.onvision.title</h4>
+                            <p class="text-xs mt-3 text-slate-500 leading-relaxed">node.onvision.desc</p>
                         </a>
                         <!-- onva Culture -->
                         <a href="https://ec2045.github.io/onva_culture" target="_blank" class="node-card p-6">
                             <span class="tag tag-research">Culture Division</span>
-                            <h4 class="font-bold text-lg mt-4">ONVA Culture</h4>
-                            <p class="text-xs mt-3 text-slate-500 leading-relaxed">
-                                ONVA王国の衣食住、生活様式を記録した文化アーカイブ。伝統衣装「!abyang」や主食のポテトサラダなど、合理性と美学が融合した日常を詳説。</p>
+                            <h4 class="font-bold text-lg mt-4">node.onvaculture.title</h4>
+                            <p class="text-xs mt-3 text-slate-500 leading-relaxed">node.onvaculture.desc</p>
                         </a>
                         <!-- onva Citizen -->
                         <a href="https://ec2045.github.io/onva-citizen/" target="_blank" class="node-card p-6">
                             <span class="tag tag-research">Citizen Database</span>
-                            <h4 class="font-bold text-lg mt-4">onva 国籍データベース</h4>
-                            <p class="text-xs mt-3 text-slate-500 leading-relaxed">
-                                ONVA王国の国籍保有者名簿。種族、職業、使用言語、そして個人のバイナリデータまでを網羅した市民管理アーカイブ。</p>
+                            <h4 class="font-bold text-lg mt-4">node.onvacitizen.title</h4>
+                            <p class="text-xs mt-3 text-slate-500 leading-relaxed">node.onvacitizen.desc</p>
                         </a>
                     </div>
                 </section>
@@ -279,8 +252,7 @@
                 <!-- SECTION 04 -->
                 <section>
                     <div class="flex justify-between items-end mb-8 border-b pb-4">
-                        <h3 class="text-xs font-black tracking-widest text-red-500 uppercase">04 Irregulars & Resistance
-                        </h3>
+                        <h3 class="text-xs font-black tracking-widest text-red-500 uppercase">section.04</h3>
                         <span class="text-[0.6rem] font-mono text-red-300">CRITICAL_THREAT_LEVEL_S</span>
                     </div>
                     <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
@@ -288,41 +260,41 @@
                         <a href="https://ec2045.github.io/artr/" target="_blank" class="node-card p-5 border-red-200">
                             <span class="tag tag-threat">Target R</span>
                             <h4 class="font-bold text-base mt-4">Artist R</h4>
-                            <p class="text-[0.65rem] mt-2 text-slate-500">初代リタレンより受け継がれる「存在」。WACの網をすり抜ける唯一の「生成者」。</p>
+                            <p class="text-[0.65rem] mt-2 text-slate-500">node.artr.desc</p>
                         </a>
                         <!-- BIB -->
                         <a href="https://ec2045.github.io/BIB/" target="_blank" class="node-card p-5 border-red-200">
                             <span class="tag tag-threat">Identity</span>
                             <h4 class="font-bold text-base mt-4">BIB</h4>
-                            <p class="text-[0.65rem] mt-2 text-slate-500">肉体的実存を固守する保守勢力。NODE LABのデジタル化に対するアンチテーゼ。</p>
+                            <p class="text-[0.65rem] mt-2 text-slate-500">node.bib.desc</p>
                         </a>
                         <!-- AI Dictionary -->
                         <a href="https://ec2045.github.io/ai-Fictional-dictionary/" target="_blank"
                             class="node-card p-5 border-red-200">
                             <span class="tag tag-threat">Alien Intelligence</span>
                             <h4 class="font-bold text-base mt-4">AI Dictionary</h4>
-                            <p class="text-[0.65rem] mt-2 text-slate-500">Rにより生成された異種知性群。WACのアルゴリズムでは解読不能な生態系。</p>
+                            <p class="text-[0.65rem] mt-2 text-slate-500">node.aidict.desc</p>
                         </a>
                         <!-- Artist R Blog -->
                         <a href="https://ec2045.github.io/artr_blog/" target="_blank"
                             class="node-card p-5 border-red-200">
                             <span class="tag tag-threat">Target R</span>
                             <h4 class="font-bold text-base mt-4">Artist R Blog</h4>
-                            <p class="text-[0.65rem] mt-2 text-slate-500">同一アート作家 Rによるマニフェスト。独創性の源泉とバイナリパターンの記録。</p>
+                            <p class="text-[0.65rem] mt-2 text-slate-500">node.artrblog.desc</p>
                         </a>
                         <!-- ArtR x T.S. Interview -->
                         <a href="https://ec2045.github.io/artr-ts/" target="_blank"
                             class="node-card p-5 border-red-200">
                             <span class="tag tag-threat">Target R / T.S.</span>
                             <h4 class="font-bold text-base mt-4">ArtR x T.S. Archive</h4>
-                            <p class="text-[0.65rem] mt-2 text-slate-500">Artist RとT.S.の対話記録。バイナリの使途や和音陣国に隠された「問い」が記録されている。</p>
+                            <p class="text-[0.65rem] mt-2 text-slate-500">node.artrts.desc</p>
                         </a>
                         <!-- Rittsu's Blog -->
                         <a href="https://ec2045.github.io/rittu-blog/" target="_blank"
                             class="node-card p-5 border-red-200">
                             <span class="tag tag-threat">Target R / Rittsu</span>
                             <h4 class="font-bold text-base mt-4">Rittsu's Blog</h4>
-                            <p class="text-[0.65rem] mt-2 text-slate-500">Rの称号を受け継ぐりっつーのブログ。過去の記憶やメイとの出会いの記録。</p>
+                            <p class="text-[0.65rem] mt-2 text-slate-500">node.rittublog.desc</p>
                         </a>
                     </div>
                 </section>
@@ -334,20 +306,20 @@
         <footer class="p-8 border-t border-wac-border bg-slate-900 text-white">
             <div class="flex flex-col md:flex-row justify-between items-center gap-6">
                 <div class="text-[0.6rem] tracking-[0.3em] font-mono opacity-50">
-                    © 東暦2045 WATCH ALL COMPANY. ALL RIGHTS RESERVED. / DATA PURITY: 99.98%
+                    footer.copyright
                 </div>
                 <div class="flex gap-4">
                     <div class="px-4 py-1 border border-white/20 text-[0.6rem] font-bold uppercase tracking-widest">
-                        Status: Secure
+                        footer.status
                     </div>
                     <div class="px-4 py-1 bg-red-600 text-[0.6rem] font-bold uppercase tracking-widest alert-text">
-                        Target R: Missing
+                        footer.target
                     </div>
                 </div>
             </div>
         </footer>
     </div>
-  <script src="src/script_95535986.js"></script>
+    <script src="src/script_95535986.js"></script>
 </body>
 
 </html>

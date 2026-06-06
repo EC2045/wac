@@ -1,0 +1,123 @@
+# WAC GLOBAL ARCHIVE - Modern English 2045
+
+# Format: key=value
+
+# Header
+
+header.subtitle=WAC Internal Access v11.0
+header.desc=Symbols, Energy, and Existence WAC integrate. World WAC optimize into single "Meaning".
+
+# System Bar
+
+system.session=NETWORK SESSION: ACTIVE
+system.signal=● TARGET [R] SIGNAL LOST
+
+# Sections
+
+section.01=01 Core Infrastructure
+section.02=02 Conceptual Areas
+section.03=03 Parallel Portals
+section.04=04 Irregulars & Resistance
+
+# Chronicle
+
+chronicle.title=Archive Chronicle
+
+# Footer
+
+footer.copyright=© Eastern Calendar 2045 WATCH ALL COMPANY. ALL RIGHTS RESERVED. / DATA PURITY: 99.98%
+footer.status=Status: Secure
+footer.target=Target R: Missing
+
+# Chronicle History
+
+chronicle.1912.title=Breaking the "Wall of Records"
+chronicle.1912.desc=Secret Treasure Tuna Salad and Naralin discovered. Wall of Records they crossed. Ancestor Rittengence of R they met.
+
+chronicle.1928.title=Foundation of ONVA
+chronicle.1928.desc=Irrationality Nation eliminated. Rationalist Nation optimized established. "ONVA" they named.
+
+chronicle.1998.title=Establishment of USSO
+chronicle.1998.desc=Global Symbol Standardization Protocol formulation began.
+
+chronicle.2003.title=Establishment of Religion of Kneaded Erasers
+chronicle.2003.desc=World flexible like Kneaded Eraser should become. Errors itself into should incorporate. Unity should achieve. Flexibility and Plasticity emphasizing Ideology established.
+
+chronicle.2023.title=First Observation of Creator "R"
+chronicle.2023.desc=Uncontrolled Symbol Generation confirmed. Later, Person single not is "R". Existence inherited from first Ritaren is.
+
+chronicle.2024.title=T.S. Portfolio Released
+chronicle.2024.desc=Joke Site Mysterious Figure from Nation of Waon Jinkoku released. Meaningless Aesthetics and Non-functional Rationality integrated. "Person who Binary speak" Artist R them called. Creativity through Analysis and Memorization of Binary Patterns they honed.
+
+chronicle.2026.title=CED Foundation Reorganization
+chronicle.2026.desc=Independent Computation Domain NODE LAB established. Experiments of Neural Migration of Consciousness began.
+
+chronicle.2035.title=WAC Integrated Rule Begins
+chronicle.2035.desc=USSO and NODE LAB WAC acquired. Symbols and Computational Resources of World WAC manage.
+
+chronicle.2045.title=Current: Wide-area Monitoring v11
+chronicle.2045.desc=Aggregation to World Portal completed. Tracking of Creator R continue to fail.
+# Core Nodes
+
+node.worldportal.desc=All Projects Top-level Interface integrate. Gateway to all Symbols, Energy, and Existence is.
+
+node.ced.desc=Singular Energy extracted from Physical Phenomena source is. Upon this "Nourishment" all Computations builded is.
+
+node.usso.desc=Meaning Unification and Symbol Health Management. Oldest Regulatory Node supporting Ideology of WAC is.
+
+node.nodelab.desc=Transfer of Consciousness from Physical Body High-load Computation Center promote. Neural Migration it does.
+
+node.e4cloud.desc=Administrator Authentication Internal Encrypted Archive require. Personal Data of Aria, May, Shuren, and T.S. contain. Physical Directory Scans through dynamically referenced is.
+
+node.murinsu.title=Murinsu Co., Ltd.
+node.murinsu.desc="100% Questions" Unique Region in East advocate. Answers reject. Thought into Blank reseting Reagents manufacturer is.
+
+node.symbol.title=Fictional Inquiry Exhibition
+node.symbol.desc=Abnormal Symbols and Absurd Questions Graveyard is. Symbols outside Regulation of USSO Final Containment Zone is.
+
+node.kneaded.title=Religion of Kneaded Erasers
+node.kneaded.desc="Unity like Kneaded Eraser World should have" Religious Group believe. Scripture World flexibly perceive how teach.
+
+node.ts.title=T.S Official Portfolio
+node.ts.desc=Relationship with Artist R Monitoring Target of WAC difficult to grasp is. Person directly listed in WAC Archive not is. Joke Site based in Tokyo run. Meaningless Aesthetics and Non-functional Rationality advocate. Fictional Works like MURINSU Framework and Dream Debugger v2.0 feature.
+
+node.waon.title=Waon Jinkoku Official Site
+node.waon.desc=Nation on Continent of La Uqcaca is. Balance, Harmony, and Ordered Chaos Philosophy hold. Ancient Wisdom into Digital Form carve. Staffs according to Roles Citizens carry. Staff of Waon to temporary King commit. Legend of Demon King and Craftsman sealing inherit. Reconciliation through Staff of "‽" inherit.
+
+node.waonobs.title=Waonjin Ecosystem Observatory
+node.waonobs.desc=Creatures living in Nation of Waon Jinkoku Database is. Various unique Creatures registered is.
+
+node.wen.title=WEN | Waon Jinkoku Official Broadcasting Station
+node.wen.desc=Latest News to Citizens deliver. National Culture abroad broadcast. Domestic Broadcasting of Waon Jinkoku is.
+
+# ONVA / Artist R Nodes
+
+node.onva.title=ONVA Kingdom Official Portal
+node.onva.desc=World Portal of WAC through connected is. Internal Management Nodes in registered not is. Rationalist Nation deep in Eurasian Continent located is. Irrational Languages eliminated. Optimization with 18-letter Byam advocate. Eastern Calendar 1928 founded. In Eastern Calendar 1912, Wall of Records Tuna Salad and Naralin crossed. Treasure discovered. Ancestor Rittengence of R meeted. "ONVA" they named.
+
+node.onvahist.title=ONVA Historical Documents
+node.onvahist.desc=History of ONVA Kingdom Archive recording is. Various Histories beginning with Myth of Tuna Salad organize.
+
+node.onvacreature.title=ONVA Biological Documents
+node.onvacreature.desc=Creatures living in ONVA Kingdom Database is. Ecology of various unique Creatures register.
+
+node.onvision.title=onvision | ONVA Official Broadcasting Station
+node.onvision.desc=Current Status of ONVA to World and Future convey. Computation Precision daily report. Symbol Health daily report. Global Harmony and Optimization Status monitor and broadcast continue.
+
+node.onvaculture.title=ONVA Culture
+node.onvaculture.desc=Food, Clothing, Housing, and Lifestyle of ONVA Kingdom Cultural Archive recording is. Traditional Attire "!abyang" and Staple Potato Salad include. Daily Life fusing Rationality and Aesthetics explain in detail.
+
+node.onvacitizen.title=ONVA Citizenship Database
+node.onvacitizen.desc=Citizens of ONVA Kingdom Registry is. Species, Occupation, Language, and individual Binary Data cover. Citizen Management Archive is.
+
+node.artr.desc=Existence inherited from first Ritaren is. Only Creator slipping through Net of WAC is.
+
+node.bib.desc=Physical Existence Conservative Force defend. Antithesis to Digital Migration of NODE LAB is.
+
+node.aidict.desc=Group of Alien Intelligence generated by R is. Algorithms of WAC by interpreted not is.
+
+node.artrblog.desc=Manifesto by same Artist R is. Source of Creativity and Record of Binary Patterns is.
+
+node.artrts.desc=Dialogue Record between Artist R and T.S. is. Usage of Binary record. Question hidden in Waon Jinkoku record.
+
+node.rittublog.desc=Blog of Rittsu inheriting Title of R is. Past Memories and Encounter with May record.

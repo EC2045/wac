@@ -1,0 +1,86 @@
+# WAC GLOBAL ARCHIVE - English
+# Format: key=value
+
+# Header
+header.subtitle=WAC Internal Access v11.0
+header.desc=Integrated management of symbols, energy, and existence. WAC optimizes the world into a single "meaning."
+
+# System bar
+system.session=NETWORK SESSION: ACTIVE
+system.signal=● TARGET [R] SIGNAL LOST
+
+# Sections
+section.01=01 Core Infrastructure
+section.02=02 Conceptual Areas
+section.03=03 Parallel Portals
+section.04=04 Irregulars & Resistance
+
+# Chronicle
+chronicle.title=Archive Chronicle
+
+# Footer
+footer.copyright=© Eastern Calendar 2045 WATCH ALL COMPANY. ALL RIGHTS RESERVED. / DATA PURITY: 99.98%
+footer.status=Status: Secure
+footer.target=Target R: Missing
+
+# Chronicle History
+chronicle.1912.title=Breaking the "Wall of Records"
+chronicle.1912.desc=Tuna Salad and Naralin crossed the wall, discovered a secret treasure, and met R's ancestor, Rittengence.
+chronicle.1928.title=Foundation of onva
+chronicle.1928.desc=A rationalist nation optimized by eliminating irrationality is established. Named "ONVA".
+chronicle.1998.title=Establishment of USSO
+chronicle.1998.desc=Formulation of the global symbol standardization protocol began.
+chronicle.2003.title=Establishment of the Religion of Kneaded Erasers
+chronicle.2003.desc=An ideology emphasizing flexibility and plasticity, teaching that the world should change shape flexibly like a kneaded eraser, incorporating even errors into itself to unify.
+chronicle.2023.title=First Observation of Creator "R"
+chronicle.2023.desc=Uncontrolled symbol generation was confirmed. It was later revealed that "R" is not a single person, but an "existence" inherited from the first generation Ritaren.
+chronicle.2024.title=T.S. Portfolio Released
+chronicle.2024.desc=A mysterious figure from the Nation of Waon Jinkoku released a joke site integrating meaningless aesthetics and non-functional rationality. Artist R mentioned them as "a mysterious person who can speak binary" and honed their creativity through analyzing and memorizing binary patterns.
+chronicle.2026.title=CED Foundation Reorganization
+chronicle.2026.desc=NODE LAB established an independent computation domain. Experiments on neural migration of consciousness began.
+chronicle.2035.title=WAC Integrated Rule Begins
+chronicle.2035.desc=Acquired USSO and NODE LAB to manage all symbols and computational resources of the world.
+chronicle.2045.title=Current: Wide-area Monitoring v11
+chronicle.2045.desc=Aggregation to World Portal completed. Tracking of Creator R continues to fail.
+
+# Node Cards
+node.worldportal.desc=The top-level interface integrating all projects. The gateway to all symbols, energy, and existence.
+node.ced.desc=The source of singular energy extracted from physical phenomena. All computations are built upon this "nourishment."
+node.usso.desc=Unification of meaning and symbol health management. The oldest regulatory node supporting WAC's ideology.
+node.nodelab.desc=High-load computation center promoting transfer of consciousness from the physical body (neural migration).
+node.e4cloud.desc=Internal encrypted archive requiring administrator authentication. Contains personal data of Aria, May, Shuren, and T.S., dynamically referenced via physical directory scans.
+
+node.murinsu.title=Murinsu Co., Ltd.
+node.murinsu.desc=A unique region in the East advocating "100% Questions". The manufacturer of reagents that reject answers and reset thought to blank.
+node.symbol.title=Fictional Inquiry Exhibition
+node.symbol.desc=A graveyard for abnormal symbols and absurd questions. The final containment zone for symbols out of USSO's regulation.
+node.kneaded.title=The Religion of Kneaded Erasers
+node.kneaded.desc=A religious group believing "the world should have a unity like a kneaded eraser". The scripture teaches how to perceive the world flexibly.
+
+node.ts.title=T.S Official Portfolio
+node.ts.desc=An entity whose relationship with Artist R, WAC's monitoring target, is hard to grasp. A mysterious person not directly listed in WAC archive list, running a Tokyo-based joke site advocating meaningless aesthetics and non-functional rationality. Features fictional works like MURINSU Framework and Dream Debugger v2.0.
+node.waon.title=Waon Jinkoku Official Site
+node.waon.desc=A nation on the continent of La Uqcaca. With the philosophy of balance, harmony, and ordered chaos, it carves ancient wisdom into digital form. Citizens carry staffs according to their roles, committing the staff of Waon to the temporary king. Inherits the legend of sealing the demon king and craftsman, and reconciliation through the staff of "‽" (combining "!" and "?").
+node.waonobs.title=Waonjin Ecosystem Observatory
+node.waonobs.desc=A database about creatures living in the Nation of Waon Jinkoku. Various unique creatures are registered.
+node.wen.title=WEN | Waon Jinkoku Official Broadcasting Station
+node.wen.desc=Domestic broadcasting in Waon Jinkoku. Serves to deliver the latest news to citizens and broadcast national culture abroad.
+node.onva.title=onva Kingdom Official Portal
+node.onva.desc=Connected via WAC's World Portal, but unregistered in internal management nodes. Located deep in the Eurasian continent, a rationalist nation founded in 1928 advocating optimization with 18-letter byam by eliminating irrational languages. Holds the history where Tuna Salad and Naralin crossed the "Wall of Records" in 1912, discovered a treasure, met R's ancestor Rittengence, and named ONVA.
+node.onvahist.title=onva Historical Documents
+node.onvahist.desc=An archive recording the history of the ONVA Kingdom. Organizes various histories starting with the myth of Tuna Salad.
+node.onvacreature.title=onva Biological Documents
+node.onvacreature.desc=A database about creatures living in the ONVA Kingdom. Registers the ecology of various unique creatures.
+node.onvision.title=onvision | ONVA Official Broadcasting Station
+node.onvision.desc=Official broadcasting station conveying the current status of ONVA to the world and the future. Continues to report daily computation precision and symbol health, monitoring and broadcasting the status of global harmony and optimization.
+node.onvaculture.title=ONVA Culture
+node.onvaculture.desc=Cultural archive recording the food, clothing, housing, and lifestyle of the ONVA Kingdom. Explains in detail the daily life fusing rationality and aesthetics, including traditional attire "!abyang" and the staple potato salad.
+node.onvacitizen.title=onva Citizenship Database
+node.onvacitizen.desc=A registry of ONVA Kingdom citizens. A citizen management archive covering species, occupation, language, and individual binary data.
+
+node.artr.desc=The "existence" inherited from the first generation Ritaren. The only "creator" slipping through WAC's net.
+node.bib.desc=A conservative force defending physical existence. An antithesis to NODE LAB's digital migration.
+node.aidict.desc=A group of alien intelligence generated by R. Uninterpretable by WAC's algorithms.
+node.artrblog.desc=A manifesto by the same artist R. A record of the source of creativity and binary patterns.
+node.artrts.desc=Dialogue record between Artist R and T.S. Records the usage of binary and the "question" hidden in Waon Jinkoku.
+node.rittublog.desc=Blog of Rittsu, who inherits the title of R. Records past memories and the encounter with May.

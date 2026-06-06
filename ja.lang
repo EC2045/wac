@@ -1,0 +1,86 @@
+# WAC GLOBAL ARCHIVE - 日本語
+# フォーマット: キー=値
+
+# ヘッダー
+header.subtitle=WAC Internal Access v11.0
+header.desc=記号、エネルギー、そして実存の統合管理。WACは世界をひとつの「意味」へと最適化します。
+
+# システムバー
+system.session=NETWORK SESSION: ACTIVE
+system.signal=● TARGET [R] SIGNAL LOST
+
+# セクション
+section.01=01 Core Infrastructure
+section.02=02 Conceptual Areas
+section.03=03 Parallel Portals
+section.04=04 Irregulars & Resistance
+
+# クロニクル
+chronicle.title=Archive Chronicle
+
+# フッター
+footer.copyright=© 東暦2045 WATCH ALL COMPANY. ALL RIGHTS RESERVED. / DATA PURITY: 99.98%
+footer.status=Status: Secure
+footer.target=Target R: Missing
+
+# クロニクル履歴
+chronicle.1912.title=「記録の壁」突破
+chronicle.1912.desc=ツナサラダとナラリンが壁を越え秘宝を発見。Rの祖先リテンジェンスと出会う。
+chronicle.1928.title=onva 建国
+chronicle.1928.desc=不合理を廃し、最適化された合理主義国家が成立。「ONVA」と名付けられる。
+chronicle.1998.title=USSO 設立
+chronicle.1998.desc=世界記号標準化プロトコルの策定開始。
+chronicle.2003.title=練里消詩教 成立
+chronicle.2003.desc=世界を練り消しのように「柔軟に形を変え、汚れ（過ち）さえも自らに練り込んで一つにまとまるべき」と説く、包容力と可塑性を重んじる思想の誕生
+chronicle.2023.title=作家「R」初観測
+chronicle.2023.desc=制御不能な記号生成を確認。後に「R」は一人ではなく、初代リタレンから受け継がれた「存在（ぞんざい）」であることが判明。
+chronicle.2024.title=T.S. ポートフォリオ公開
+chronicle.2024.desc=和温陣国出身の謎の人物が、意味のない美学と機能しない合理性を統合したジョークサイトを公開。Artist Rは「バイナリを喋れる謎の人物」と言及し、バイナリパターンの解析・暗記を通じて独創性を鍛えた。
+chronicle.2026.title=CED財団 改組
+chronicle.2026.desc=NODE LABが独立演算領域を確立。意識のデータ化実験が始動。
+chronicle.2035.title=WAC 統合支配開始
+chronicle.2035.desc=USSO、NODE LABを傘下に収め、世界の全記号・演算資源を統括。
+chronicle.2045.title=現在：広域監視 v11
+chronicle.2045.desc=World Portalへの集約完了。作家Rの追跡は依然として失敗継続中。
+
+# ノードカード
+node.worldportal.desc=全プロジェクトを統合する最上位インターフェース。記号・エネルギー・存在の全入口。
+node.ced.desc=物理現象から抽出される特異エネルギーの供給源。全ての演算はこの「糧」の上に成り立つ。
+node.usso.desc=意味の統一と記号の健康管理。WACのイデオロギーを支える最古の規律ノード。
+node.nodelab.desc=肉体からの意識転送（ニューラル・マイグレーション）を推進する高負荷演算センター。
+node.e4cloud.desc=管理者認証を必要とする内部暗号化アーカイブ。アリア、メイ、シュレン、T.S.の個人データが格納されており、物理ディレクトリスキャンにより動的に参照可能。
+
+node.murinsu.title=ムリンス (株式会社ムリンス)
+node.murinsu.desc=「問い100%」を標榜する東洋の特異領域。答えを拒絶し、思考を白紙に戻す試薬の製造元。
+node.symbol.title=架空疑問展
+node.symbol.desc=異常記号と不条理な問いの墓場。USSOによる管理を外れた記号の最終収容所。
+node.kneaded.title=練里消詩教
+node.kneaded.desc=「世界は練り消しのようなまとまりを持つべきだ」という思想をもつ宗教団体。経典である「練里消詩教」は世界を柔軟に捉えるための教えを説いている。
+
+node.ts.title=T.S Official Portfolio
+node.ts.desc=WACの監視対象であるArtist Rとの関係が掴みづらい存在。WACアーカイブリストには直接記載されない謎の人物で、意味のない美学と機能しない合理性を掲げる都内拠点のジョークサイト。MURINSU FrameworkやDream Debugger v2.0などの架空成果物を公開。
+node.waon.title=和温陣国 公式サイト
+node.waon.desc=ラ＝ウクカ大陸の国家。均衡と調和、秩序ある混沌を理念とし、古の知恵をデジタルに刻む。国民は役割ごとに杖を携え、和温の杖を王（仮）に託す。魔王と職人の封印、そして「！」と「？」を合体させた「‽」の杖による和解の伝説を継承する。
+node.waonobs.title=和温陣国生態系観測所
+node.waonobs.desc=和温陣国に住む生物について書かれているデータベース。様々な特異生物が登録されている。
+node.wen.title=WEN | 和温陣国公式放送局
+node.wen.desc=和温陣国の国内放送。様々な最新情報を国民に伝えるとともに、国家の文化を国外に発信する役割を持つ。
+node.onva.title=onva Kingdom Official Portal
+node.onva.desc=WACのWorld Portal経由で接続されるが、内部管理ノードには未登録。ユーラシア大陸深部に位置し、不合理な言語を廃して18文字のbyamで最適化を掲げる東暦1928年建国の合理主義国家。東暦1912年、ツナサラダとナラリンが「記録の壁」を越えて秘宝を発見し、Rの祖先リテンジェンスと出会いONVAが名付けられた歴史を持つ。
+node.onvahist.title=onva 歴史資料
+node.onvahist.desc=ONVA王国の歴史を記録したアーカイブ。ツナサラダの神話を始めとした様々な歴史が整理されている。
+node.onvacreature.title=onva 生物資料
+node.onvacreature.desc=ONVA王国に住む生物について書かれているデータベース。様々な特異生物の生態が登録されている。
+node.onvision.title=onvision | ONVA公式放送局
+node.onvision.desc=ONVAの現状を世界、そして未来へ伝える公認放送局。日々の演算精度や記号の健康状態を報道し、世界の調和 and 最適化の状況を監視・発信し続ける。
+node.onvaculture.title=ONVA Culture
+node.onvaculture.desc=ONVA王国の衣食住、生活様式を記録した文化アーカイブ。伝統衣装「!abyang」や主食のポテトサラダなど、合理性と美学が融合した日常を詳説。
+node.onvacitizen.title=onva 国籍データベース
+node.onvacitizen.desc=ONVA王国の国籍保有者名簿。種族、職業、使用言語、そして個人のバイナリデータまでを網羅した市民管理アーカイブ。
+
+node.artr.desc=初代リタレンより受け継がれる「存在」。WACの網をすり抜ける唯一の「生成者」。
+node.bib.desc=肉体的実存を固守する保守勢力。NODE LABのデジタル化に対するアンチテーゼ。
+node.aidict.desc=Rにより生成された異種知性群。WACのアルゴリズムでは解読不能な生態系。
+node.artrblog.desc=同一アート作家 Rによるマニフェスト。独創性の源泉とバイナリパターンの記録。
+node.artrts.desc=Artist RとT.S.の対話記録。バイナリの使途や和音陣国に隠された「問い」が記録されている。
+node.rittublog.desc=Rの称号を受け継ぐりっつーのブログ。過去の記憶やメイとの出会いの記録。
